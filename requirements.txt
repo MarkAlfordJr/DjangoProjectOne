@@ -1,0 +1,3 @@
+# Core Framework
+django==2.2
+djangorestframework==3.9.2

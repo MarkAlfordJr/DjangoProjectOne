@@ -14,4 +14,33 @@
         - now projectt and server is linked
     - run code from project to server
         'python file_name.py'
-    - 
+4. setup the environment 
+    - inside the /vagrant of server: 'python -m venv ~/env'
+    - to activate venv: 'source ~/env/bin/activate'
+    - to deactivate: 'deactivate'
+5. install via requirements.txt 
+    - inside /vagrant of server, make a equirements.txt file
+    - put in dependencies
+    - 'pip install -r requirements.txt'
+6. create a new django app/project
+    - inside /vagrant of server
+        'django-admin.py startproject project_name .'
+    - create app within project (project can have multiple apps, seperation 
+        of functionality; microservice)
+        'python manage.py startapp app_name'
+7. enable app in django project
+    - go to project/settings.py
+    - put app inside:
+    INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    ]
+    - add: 'rest_framework', 'rest_framework.authtoken', and finally 'app_name',
+8. run the app
+    - 'python manage.py runserver 0.0.0.0:8000'
+    - run server in browser: '127.0.0.1:8000'
+    - to stop: ctrl+c
