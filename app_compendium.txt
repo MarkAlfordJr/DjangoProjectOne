@@ -1,0 +1,17 @@
+1. make repo
+    - gitignore
+    - liscense
+    - etc.
+2. make vagrant file
+    ‘vagrant init ubuntu/bionic64’
+    - fill in starter text
+    - run 'vagrant up' to start vagrant 
+    - run 'vagrant ssh' to connect the vagrant server
+        any commands on this server go to the guest OS
+    - 'exit' to exit out of server.
+3. use the server
+    'cd /vagrant'
+        - now projectt and server is linked
+    - run code from project to server
+        'python file_name.py'
+    - 
