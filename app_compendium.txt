@@ -44,3 +44,7 @@
     - 'python manage.py runserver 0.0.0.0:8000'
     - run server in browser: '127.0.0.1:8000'
     - to stop: ctrl+c
+
+DEVELOP THE app
+1. setup models for database, so django can handle the data
+    
